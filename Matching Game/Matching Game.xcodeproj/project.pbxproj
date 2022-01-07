@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D5AB46C2788944800DD56D1 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5AB46B2788944800DD56D1 /* NavView.swift */; };
 		E04B1B6F278745AF006ED4DC /* Matching_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B1B6E278745AF006ED4DC /* Matching_GameApp.swift */; };
 		E04B1B71278745AF006ED4DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B1B70278745AF006ED4DC /* ContentView.swift */; };
 		E04B1B73278745B8006ED4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04B1B72278745B8006ED4DC /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D5AB46B2788944800DD56D1 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		E04B1B6B278745AF006ED4DC /* Matching Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matching Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04B1B6E278745AF006ED4DC /* Matching_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matching_GameApp.swift; sourceTree = "<group>"; };
 		E04B1B70278745AF006ED4DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				E04B1B6E278745AF006ED4DC /* Matching_GameApp.swift */,
 				E04B1B70278745AF006ED4DC /* ContentView.swift */,
+				7D5AB46B2788944800DD56D1 /* NavView.swift */,
 				E04B1B72278745B8006ED4DC /* Assets.xcassets */,
 				E04B1B74278745B8006ED4DC /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D5AB46C2788944800DD56D1 /* NavView.swift in Sources */,
 				E04B1B71278745AF006ED4DC /* ContentView.swift in Sources */,
 				E04B1B6F278745AF006ED4DC /* Matching_GameApp.swift in Sources */,
 			);
