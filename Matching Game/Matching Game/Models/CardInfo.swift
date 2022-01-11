@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Card: Hashable {
-    var id: UUID
+struct Card: Hashable, Identifiable {
+    var id: Int
     var image: String
 }
