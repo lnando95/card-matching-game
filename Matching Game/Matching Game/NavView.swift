@@ -8,26 +8,20 @@
 import SwiftUI
 
 struct NavView: View {
-    
-    var options: [GameOption] = allOptions
-    
     var body: some View {
         ZStack {
-            NavigationView {
-                ZStack {
-                    List() {
-                        ForEach((options), id: \.self) { game in
-                            NavigationLink("\(game.category)") {
-                                CardGameView()
-                            }
-                            .font(.system(size: 25))
-                            
-                        }
-                    }
+        NavigationView {
+            List(allOptions) {
+                options in
+                NavigationLink {
+                    CardGameView(gameOption: options)
+                } label: {
+                    Text(options.category)
                 }
-                .navigationTitle("Game List")
             }
-            
+            .navigationTitle("Games")
+        }
+        
             VStack {
                 Spacer()
                 HStack {
@@ -48,9 +42,9 @@ struct NavView: View {
             }
             
         }
+    }
         
     }
-}
 struct NavView_Previews: PreviewProvider {
     static var previews: some View {
         NavView()

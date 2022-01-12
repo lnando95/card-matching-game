@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct GameOption: Hashable {
+struct GameOption: Hashable, Identifiable {
+    var id: Int
     var cards: [Card]
     var category: String
 }

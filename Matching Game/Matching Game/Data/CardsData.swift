@@ -23,7 +23,7 @@ let animalCards = [
     Card (id: 1011, image: "🐶"),
     Card (id: 1012, image: "🐱"),
     Card (id: 1013, image: "🐹"),
-    Card (id: 1014, image: "🙍🏿"),
+    Card (id: 1014, image: "🐓"),
     Card (id: 1015, image: "🐵"),
     Card (id: 1016, image: "🐷"),
     Card (id: 1017, image: "🙀"),

@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct CardGameView: View {
-    
     var grid: [GridItem] = Array(repeating: .init(.flexible()), count: 4)
-    
-    var cardGameData: [Card] = emojiCards
+    var gameOption: GameOption
     
     var body: some View {
+        
         ScrollView {
             LazyVGrid(columns: grid) {
-                ForEach((cardGameData), id: \.self) { emojiButton in
-                    Button("\(emojiButton.image)") {
-                        
-                    }
-                        .padding()
+            ForEach((gameOption.cards), id: \.self) { emojiCards in
+                Button(emojiCards.image) {
+                    
+                }
+                    .padding()
                     
                 }
                 .padding()
@@ -33,6 +32,6 @@ struct CardGameView: View {
 
 struct CardGameView_Previews: PreviewProvider {
     static var previews: some View {
-        CardGameView()
+        CardGameView(gameOption: emojiOption)
     }
 }
