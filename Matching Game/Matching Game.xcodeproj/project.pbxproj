@@ -97,9 +97,9 @@
 			children = (
 				E04B1B6E278745AF006ED4DC /* Matching_GameApp.swift */,
 				E04B1B70278745AF006ED4DC /* ContentView.swift */,
-				7D5AB46B2788944800DD56D1 /* NavView.swift */,
 				7DCC1C1C278E6A30006DCC2D /* StatsView.swift */,
 				7D510A5A278E22790081CF8E /* CardGameView.swift */,
+				7D5AB46B2788944800DD56D1 /* NavView.swift */,
 				4B4A5C4C278DE93200DA0F09 /* Data */,
 				4BB06171278DE4BB0040B552 /* Models */,
 				E04B1B72278745B8006ED4DC /* Assets.xcassets */,

@@ -9,20 +9,22 @@ import SwiftUI
 
 struct NavView: View {
     var body: some View {
-        ZStack {
+       
         NavigationView {
+            ZStack {
             List(allOptions) {
                 options in
                 NavigationLink {
                     CardGameView(gameOption: options)
                 } label: {
                     Text(options.category)
+                        .font(.system(size: 24))
                 }
             }
             .navigationTitle("Games")
-        }
-        
+            
             VStack {
+            
                 Spacer()
                 HStack {
                     Spacer()
@@ -32,7 +34,6 @@ struct NavView: View {
                     .font(.system(size: 30))
                     .padding(15)
                     .background(.blue)
-                    
                     .clipShape(Circle())
                     .foregroundColor(.black)
                     .padding(.trailing,25)
@@ -40,6 +41,9 @@ struct NavView: View {
                 }
                 
             }
+        }
+        
+            
             
         }
     }
