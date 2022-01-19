@@ -14,7 +14,7 @@ import SwiftUI
 struct SamCardGameView: View {
     @State private var timer = StopWatchManager()
     @State private var animationAmount = 0.0
-     
+    @State private var score = 0
     var grid: [GridItem] = Array(repeating: .init(.flexible()), count: 1)
     var gameOption: GameOption
     
@@ -24,7 +24,7 @@ struct SamCardGameView: View {
             let time = timer.secondsElapsed
             let currenTime = time.formatted(.number)
             
-            Text("\(currenTime)")
+            Text("Time: \(currenTime)")
                 .font(.system(size: 30))
                 .padding(8)
                 .background(.red)
@@ -35,6 +35,15 @@ struct SamCardGameView: View {
                 ForEach(gameOption.cards, id: \.self) { emojiButton in
                     MatchingCard(content: emojiButton.image).aspectRatio(3/5, contentMode: .fit)
                 }
+            }
+            VStack {
+                Text("Score: \(score)")
+                
+                    .padding()
+                    .font(.largeTitle)
+                    .background(.red)
+                    .cornerRadius(20)
+                
             }
         }
     }
@@ -49,21 +58,24 @@ struct SamCardGameView: View {
                 if facingUp {
                     rectangle.fill().foregroundColor(.white)
                     rectangle.stroke(lineWidth: 10).foregroundColor(.red)
-                   
-                Text(content).font(Font.largeTitle)
-                        
+                    // animationAmount += 180
+                    Text(content).font(Font.largeTitle)
+                    
                 } else {
                     rectangle.fill(.red)
                 }
             }
             .onTapGesture {
                 facingUp = !facingUp
+               
                 withAnimation {
                     flipCard()
                 }
                 
             }
             .rotation3DEffect(.degrees(animationAmount), axis: (x: 0, y: 2, z: 0))
+            
+            
         }
         
         func flipCard() {
@@ -74,11 +86,10 @@ struct SamCardGameView: View {
             }
         }
     }
-    
-    struct SamCardGameView_Previews: PreviewProvider {
+   
+    struct CardGameView_Previews: PreviewProvider {
         static var previews: some View {
-            CardGameView(gameOption: emojiOption)
+            SamCardGameView(gameOption: emojiOption)
         }
     }
 }
-
