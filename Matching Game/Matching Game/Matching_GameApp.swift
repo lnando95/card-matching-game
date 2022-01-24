@@ -11,7 +11,7 @@ import SwiftUI
 struct Matching_GameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardView(card: Card(image: "🐥"), numberOfPairs: 5)
         }
     }
 }

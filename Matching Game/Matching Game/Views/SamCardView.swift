@@ -121,7 +121,7 @@ struct MatchingCard: View {
     
     struct TimerView_Previews: PreviewProvider {
         static var previews: some View {
-            SamCardGameView(gameOption: emojiOption)
+            SamCardGameView(gameOption: GameOption.emojiOption)
         }
     }
 }

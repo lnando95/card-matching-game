@@ -28,7 +28,7 @@ struct MainCardView: View {
                 .clipShape(Capsule())
                 .padding()
                 .padding(.top, -28)
-            
+
             LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()]) {
                 ForEach(memoryGame.cards) {card
                     in CardView(card: card, numberOfPairs: self.memoryGame.pairs) .aspectRatio(3/5, contentMode: .fit)
@@ -50,6 +50,6 @@ struct MainCardView: View {
 
 struct MainCardView_Previews: PreviewProvider {
     static var previews: some View {
-        MainCardView(gameOption: emojiOption, memoryGame: MemoryGame())
+        MainCardView(gameOption: GameOption.emojiOption, memoryGame: MemoryGame(gameOption: GameOption.allOptions.first!))
     }
 }

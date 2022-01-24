@@ -44,7 +44,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(card:Card(image: "🐥", id: 12), numberOfPairs: 5)
+        CardView(card: Card(image: "🐥"), numberOfPairs: 5)
     }
 }
 

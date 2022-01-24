@@ -7,24 +7,32 @@
 
 import Foundation
 
-struct CardGame<CardContent> {
+struct CardGame {
     
-    var cards: Array<Card>
+    var cards: [Card]
+    var matchedCards = [Card]()
+    var flippedCard1: Card?
+    var flippedCard2: Card?
+
     var numberOfPairs: Int
+    
+//    func cardIsMatched(_ card: Card) -> Bool {
+//        matchedCards.contains(card)
+//    }
     
     func choosedCard(card:Card) {
         
     }
     
-    init(numberOfPairsofCards: Int, createdContent: (Int) -> CardContent) {
+    init(numberOfPairsofCards: Int, createdContent: (Int) -> String) {
         cards = []
         numberOfPairs = numberOfPairsofCards
         
         for pairIndex in 0..<numberOfPairsofCards {
             let image = createdContent(pairIndex)
             
-            cards.append(Card(image: image as! String, id: pairIndex * 2))
-            cards.append(Card(image: image as! String, id: pairIndex * 2 + 1))
+            cards.append(Card(image: image))
+            cards.append(Card(image: image))
         }
         cards.shuffle()
     }
