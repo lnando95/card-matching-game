@@ -10,6 +10,6 @@ import Foundation
 struct Card: Hashable, Identifiable {
     var image: String
     var id: Int
-    var isFaceUp: Bool = true
+    var isFaceUp: Bool = false
     var isMatched: Bool = false
 }
