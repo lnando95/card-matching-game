@@ -25,14 +25,6 @@ struct SamCardGameView: View {
    
     var body: some View {
         
-        ScrollView {
-            Text("")
-//                .font(.system(size: 30))
-//                .padding(8)
-//                .background(.red)
-//                .clipShape(Capsule())
-//                .padding()
-//                .padding(.top, -28)
             LazyVGrid(columns: [GridItem(), GridItem(), GridItem(), GridItem()]) {
                 ForEach(gameOption.cards, id: \.self) { emojiButton in
                     MatchingCard(content: emojiButton.image).aspectRatio(3/5, contentMode: .fit)
@@ -40,6 +32,7 @@ struct SamCardGameView: View {
                 }
                 .onTapGesture {
                   hasBeenFlipped = true
+                    timerView.timerControls()
                 }
             }
             
@@ -65,7 +58,6 @@ struct SamCardGameView: View {
                     .background(.red)
                     .cornerRadius(20)
             }
-        }
         
     }
     func changeText() {

@@ -45,7 +45,10 @@ struct TimerView: View {
             self.stopTimer()
         } else {
             timerString = "0.00"
+            startTime = Date()
+            self.startTimer()
         }
+        isTimerRunning.toggle()
     }
     
     
