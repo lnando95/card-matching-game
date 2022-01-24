@@ -8,6 +8,8 @@
 import Foundation
 
 struct Card: Hashable, Identifiable {
-    var id: Int
     var image: String
+    var id: Int
+    var isFaceUp: Bool = true
+    var isMatched: Bool = false
 }

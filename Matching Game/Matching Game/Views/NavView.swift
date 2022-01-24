@@ -15,7 +15,7 @@ struct NavView: View {
             List(allOptions) {
                 options in
                 NavigationLink {
-                    CardGameView(gameOption: options)
+                    MainCardView(gameOption: options, memoryGame: MemoryGame())
                 } label: {
                     Text(options.category)
                         .font(.system(size: 24))
