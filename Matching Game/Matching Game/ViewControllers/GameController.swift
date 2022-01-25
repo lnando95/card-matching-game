@@ -10,16 +10,22 @@ import SwiftUI
 
 struct MemoryGame {
     
-    private var model: CardGame<String> = MemoryGame.createMemoryGame()
+    private var model: CardGame
+    
+    init(gameOption: GameOption) {
+        model = Self.createMemoryGame(gameOption: gameOption)
+    }
     
     
-    static func createMemoryGame () -> CardGame<String> {
-      let emojis = ["🦄","🦁","😫","😋","🙂","🧐","🐥","🥶"]
-        
-        let numberOfPairs = 8
-        
-        return CardGame<String>(numberOfPairsofCards: numberOfPairs) {
-            pair in emojis[pair]
+    static func createMemoryGame(gameOption: GameOption) -> CardGame {
+        return CardGame(numberOfPairsofCards: gameOption.cards.count) {
+            pair in
+            guard gameOption.cards.count > pair else {
+                // "pair" is out of bounds from cards array (example: cards array has 4 items and "pair" == 6
+                fatalError()
+                return "🤬"
+            }
+            return gameOption.cards[pair].image
         }
     }
        var cards: [Card] {

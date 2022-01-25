@@ -12,10 +12,10 @@ struct NavView: View {
        
         NavigationView {
             ZStack {
-            List(allOptions) {
+                List(GameOption.allOptions) {
                 options in
                 NavigationLink {
-                    MainCardView(gameOption: options, memoryGame: MemoryGame())
+                    MainCardView(gameOption: options, memoryGame: MemoryGame(gameOption: options))
                 } label: {
                     Text(options.category)
                         .font(.system(size: 24))

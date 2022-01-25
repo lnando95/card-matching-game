@@ -139,7 +139,11 @@ struct SamCardGameView: View {
     
     struct TimerView_Previews: PreviewProvider {
         static var previews: some View {
+<<<<<<< HEAD
             SamCardGameView(gameOption: emojiOption, memoryGame: MemoryGame())
+=======
+            SamCardGameView(gameOption: GameOption.emojiOption)
+>>>>>>> b523a291c73a9cb62baa796a7c00fffdcccd9fca
         }
     }
 }

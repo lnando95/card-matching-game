@@ -7,7 +7,7 @@
 
 import Foundation
 let game = [
-    Game(failCount: 12, time: "\(12)", gameOption: [emojiOption]),
-    Game(failCount: 12, time: "\(12)", gameOption: [animalOption]),
-    Game(failCount: 12, time: "\(12)", gameOption: [sportOption])
+    Game(failCount: 12, time: "\(12)", gameOption: [GameOption.emojiOption]),
+    Game(failCount: 12, time: "\(12)", gameOption: [GameOption.animalOption]),
+    Game(failCount: 12, time: "\(12)", gameOption: [GameOption.sportOption])
 ]
