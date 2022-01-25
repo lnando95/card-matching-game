@@ -25,15 +25,15 @@ struct TimerView: View {
             }
             .onTapGesture {
                 
-//                if isTimerRunning {
-//
-//                    self.stopTimer()
-//                } else {
-//                    timerString = "0.00"
-//                    startTime = Date()
-//                    self.startTimer()
-//                }
-//                isTimerRunning.toggle()
+                if isTimerRunning {
+
+                    self.stopTimer()
+                } else {
+                    timerString = "0.00"
+                    startTime = Date()
+                    self.startTimer()
+                }
+                isTimerRunning.toggle()
             }
             .onAppear() {
                 // no need for UI updates at startup
@@ -42,6 +42,7 @@ struct TimerView: View {
     }
     func timerControls() {
         if isTimerRunning {
+
             self.stopTimer()
         } else {
             timerString = "0.00"

@@ -25,12 +25,12 @@ class StopWatchManager: ObservableObject{
     }
 }
 
-struct StopWatchView: View {
+struct StopWatch: View {
 
     @ObservedObject var stopWatchManager = StopWatchManager()
 
     var body: some View{
-        HStack{
+        ScrollView {
             Button("Start"){
                 stopWatchManager.startWatch()
             }
@@ -42,8 +42,8 @@ struct StopWatchView: View {
     }
 }
 
-struct StopWatchView_Previews: PreviewProvider {
+struct StopWatch_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        StopWatch()
     }
 }
