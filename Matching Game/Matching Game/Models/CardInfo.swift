@@ -7,11 +7,8 @@
 
 import Foundation
 
-struct Card: Hashable, Identifiable {
+struct Card: Hashable, Identifiable, Equatable {
     var image: String
-    let id = UUID()
-    // TODO: move isFaceUp and isMatched concept to the viewModel/CardGame object
-    var isFaceUp: Bool = false
-    var isMatched: Bool = false
+    let id: Int
     
 }

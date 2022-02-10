@@ -18,12 +18,12 @@
 		4BCBD21127985AC200F813A1 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBD21027985AC200F813A1 /* CardController.swift */; };
 		4BCBD213279862B300F813A1 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBD212279862B300F813A1 /* GameController.swift */; };
 		4BCBD21727986B0F00F813A1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBD21627986B0F00F813A1 /* CardView.swift */; };
-		4BCBD2192799B5D200F813A1 /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBD2182799B5D200F813A1 /* MainCardView.swift */; };
-		7D216CA42790F67B00C4D824 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D216CA32790F67B00C4D824 /* StopWatch.swift */; };
 		7D4E85F2279EF92B00640812 /* SamCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E85F1279EF92B00640812 /* SamCardView.swift */; };
 		7D4E85F4279EF93E00640812 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4E85F3279EF93E00640812 /* TimerView.swift */; };
 		7D5AB46C2788944800DD56D1 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5AB46B2788944800DD56D1 /* NavView.swift */; };
 		7DCC1C1D278E6A30006DCC2D /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCC1C1C278E6A30006DCC2D /* StatsView.swift */; };
+		7DEE7E3427B5617C002AF033 /* SamNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE7E3327B5617C002AF033 /* SamNavView.swift */; };
+		7DEE7E3627B56E7C002AF033 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DEE7E3527B56E7C002AF033 /* MemoryGame.swift */; };
 		E04B1B6F278745AF006ED4DC /* Matching_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B1B6E278745AF006ED4DC /* Matching_GameApp.swift */; };
 		E04B1B71278745AF006ED4DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B1B70278745AF006ED4DC /* ContentView.swift */; };
 		E04B1B73278745B8006ED4DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04B1B72278745B8006ED4DC /* Assets.xcassets */; };
@@ -42,12 +42,12 @@
 		4BCBD21027985AC200F813A1 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
 		4BCBD212279862B300F813A1 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		4BCBD21627986B0F00F813A1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		4BCBD2182799B5D200F813A1 /* MainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
-		7D216CA32790F67B00C4D824 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		7D4E85F1279EF92B00640812 /* SamCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamCardView.swift; sourceTree = "<group>"; };
 		7D4E85F3279EF93E00640812 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		7D5AB46B2788944800DD56D1 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		7DCC1C1C278E6A30006DCC2D /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		7DEE7E3327B5617C002AF033 /* SamNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamNavView.swift; sourceTree = "<group>"; };
+		7DEE7E3527B56E7C002AF033 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		E04B1B6B278745AF006ED4DC /* Matching Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matching Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04B1B6E278745AF006ED4DC /* Matching_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matching_GameApp.swift; sourceTree = "<group>"; };
 		E04B1B70278745AF006ED4DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,12 +93,10 @@
 			children = (
 				E04B1B70278745AF006ED4DC /* ContentView.swift */,
 				7D5AB46B2788944800DD56D1 /* NavView.swift */,
-				4BCBD2182799B5D200F813A1 /* MainCardView.swift */,
-				7D216CA32790F67B00C4D824 /* StopWatch.swift */,
 				7DCC1C1C278E6A30006DCC2D /* StatsView.swift */,
 				4BCBD21627986B0F00F813A1 /* CardView.swift */,
-				7D4E85F1279EF92B00640812 /* SamCardView.swift */,
 				7D4E85F3279EF93E00640812 /* TimerView.swift */,
+				7D4E85F1279EF92B00640812 /* SamCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +113,8 @@
 		E04B1B62278745AF006ED4DC = {
 			isa = PBXGroup;
 			children = (
+				7DEE7E3527B56E7C002AF033 /* MemoryGame.swift */,
+				7DEE7E3327B5617C002AF033 /* SamNavView.swift */,
 				E04B1B6D278745AF006ED4DC /* Matching Game */,
 				E04B1B6C278745AF006ED4DC /* Products */,
 			);
@@ -221,24 +221,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D4E85F2279EF92B00640812 /* SamCardView.swift in Sources */,
-				7D216CA42790F67B00C4D824 /* StopWatch.swift in Sources */,
 				4BB06175278DE59B0040B552 /* GameViewModel.swift in Sources */,
 				4B4A5C52278DEDFB00DA0F09 /* GameData.swift in Sources */,
 				4B4A5C4E278DE94800DA0F09 /* CardsData.swift in Sources */,
 				4BB06177278DE6670040B552 /* UserModel.swift in Sources */,
 				4BCBD21727986B0F00F813A1 /* CardView.swift in Sources */,
 				4BB06173278DE4EC0040B552 /* GameOption.swift in Sources */,
+				7DEE7E3627B56E7C002AF033 /* MemoryGame.swift in Sources */,
 				4B4A5C54278DF00300DA0F09 /* UserData.swift in Sources */,
 				7D5AB46C2788944800DD56D1 /* NavView.swift in Sources */,
 				7D4E85F4279EF93E00640812 /* TimerView.swift in Sources */,
 				4B4A5C50278DEC1A00DA0F09 /* GameOptionData.swift in Sources */,
 				7DCC1C1D278E6A30006DCC2D /* StatsView.swift in Sources */,
+				7DEE7E3427B5617C002AF033 /* SamNavView.swift in Sources */,
 				E04B1B71278745AF006ED4DC /* ContentView.swift in Sources */,
 				4BCBD213279862B300F813A1 /* GameController.swift in Sources */,
 				E04B1B6F278745AF006ED4DC /* Matching_GameApp.swift in Sources */,
 				4BB06170278DCE6A0040B552 /* CardInfo.swift in Sources */,
 				4BCBD21127985AC200F813A1 /* CardController.swift in Sources */,
-				4BCBD2192799B5D200F813A1 /* MainCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Matching Game/Preview Content\"";
-				DEVELOPMENT_TEAM = WAQR5WVF43;
+				DEVELOPMENT_TEAM = 49669334A2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -382,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Matching-Game";
+				PRODUCT_BUNDLE_IDENTIFIER = "Matchingcom.example.Matching-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -398,7 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Matching Game/Preview Content\"";
-				DEVELOPMENT_TEAM = WAQR5WVF43;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -11,11 +11,9 @@ import SwiftUI
 struct Matching_GameApp: App {
     var body: some Scene {
         WindowGroup {
-<<<<<<< HEAD
-            StopWatch()
-=======
-            CardView(card: Card(image: "🐥"), numberOfPairs: 5)
->>>>>>> b523a291c73a9cb62baa796a7c00fffdcccd9fca
+
+            SamNavView()
+
         }
     }
 }

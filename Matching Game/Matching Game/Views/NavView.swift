@@ -15,14 +15,13 @@ struct NavView: View {
                 List(GameOption.allOptions) {
                 options in
                 NavigationLink {
-                    MainCardView(gameOption: options, memoryGame: MemoryGame(gameOption: options))
+                    SamCardGameView(gameOption: options, memoryGame: MemoryGame(gameOption: options))
                 } label: {
                     Text(options.category)
                         .font(.system(size: 24))
                 }
             }
             .navigationTitle("Games")
-            
             VStack {
             
                 Spacer()

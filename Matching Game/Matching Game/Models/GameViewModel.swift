@@ -8,7 +8,6 @@
 import Foundation
 
 struct Game {
-    var failCount: Int
     var time: String
     var gameOption: [GameOption]
 }
