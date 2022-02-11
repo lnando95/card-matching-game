@@ -13,8 +13,8 @@ struct MemoryGameView: View {
             LazyVGrid(columns: [GridItem(),GridItem(), GridItem(), GridItem()]) {
                 ForEach(memoryGame.cards) { card in
                     CardView(card: card, memoryGame: memoryGame).onTapGesture {
-                        memoryGame.model.flipCard(card: card)
-                        memoryGame.objectWillChange.send()
+                            memoryGame.model.flipCard(card: card)
+                            memoryGame.objectWillChange.send()
                     }
                 }
                 .aspectRatio(3/5, contentMode: .fit)

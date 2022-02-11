@@ -6,7 +6,7 @@
 //
 
 import Foundation
-let game = [
+let games = [
     Game(time: "\(12)", gameOption: [GameOption.emojiOption]),
     Game(time: "\(12)", gameOption: [GameOption.animalOption]),
     Game(time: "\(12)", gameOption: [GameOption.sportOption])

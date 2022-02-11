@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct StatsView: View {
+    @ObservedObject  var memoryGame: MemoryGame
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+        VStack {
+            Spacer()
+            
+            Text("Numeber Of Guesses")
+            
+            Spacer()
+            
+            Text("High score")
+            
+            List() {
+                Text("Hello")
+                Text("Hello")
+                Text("Hello")
+                Text("Hello")
+                Text("Hello")
+                Text("Hello")
+            }
+        }
+      }
+        .navigationTitle("ger")
     }
 }
 
 struct StatsView_Previews: PreviewProvider {
     static var previews: some View {
-        StatsView()
+        StatsView(memoryGame: MemoryGame(gameOption: GameOption.emojiOption))
     }
 }

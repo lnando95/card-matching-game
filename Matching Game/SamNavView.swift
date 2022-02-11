@@ -27,7 +27,7 @@ struct SamNavView: View {
                     HStack {
                         Spacer()
                         NavigationLink("\(Image(systemName: "star.fill"))") {
-                            StatsView()
+                            StatsView(memoryGame: MemoryGame(gameOption: GameOption.emojiOption))
                         }
                         .font(.system(size: 30))
                         .padding(15)

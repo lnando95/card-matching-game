@@ -8,5 +8,5 @@
 import Foundation
 
 let UserData = [
-    User(gamesPlayed:game, userName: "Matt")
+    User(gamesPlayed:games, userName: "Matt")
 ]
