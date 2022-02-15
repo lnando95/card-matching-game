@@ -7,28 +7,32 @@
 //
 import SwiftUI
 struct MemoryGameView: View {
-    @State private var animationAmount = 0.0
-    @State private var isFaceUp = false
     @ObservedObject var memoryGame: MemoryGame
+    @State private var gameHasEnded = false
+//    @State private var degrees = 0.0
+    
     var body: some View {
         ZStack {
             LazyVGrid(columns: [GridItem(),GridItem(), GridItem(), GridItem()]) {
                 ForEach(memoryGame.cards) { card in
                     CardView(card: card, memoryGame: memoryGame).onTapGesture {
-<<<<<<< HEAD:Matching Game/MemoryGame.swift
-                       
-=======
+                        
                             memoryGame.model.flipCard(card: card)
                             memoryGame.objectWillChange.send()
->>>>>>> 6476219f7a40e577dda7fffb04c1c30af1cd252a:Matching Game/Matching Game/Views/MemoryGame.swift
+                        
+                        if memoryGame.model.matches.count == 16 {
+                            gameHasEnded = true
+                        }
+                    }.alert(isPresented: $gameHasEnded) {
+                        Alert(title: Text("You've Won"), message: Text("Good Job"), dismissButton: .cancel())
                     }
+//                    .rotation3DEffect(.degrees(degrees), axis: (x: 0, y: 1, z: 0))
                 }
                 .aspectRatio(3/5, contentMode: .fit)
             }
             .padding()
         }
     }
-    
 }
 struct MemoryGameView_Previews: PreviewProvider {
     static var previews: some View {
