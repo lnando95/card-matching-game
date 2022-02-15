@@ -16,8 +16,8 @@ struct StatsView: View {
             Spacer()
             
             Text("Numeber Of Guesses")
-            
-            Spacer()
+                .padding(.bottom, 100)
+        
             
             Text("High score")
             

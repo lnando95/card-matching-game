@@ -1,8 +1,10 @@
 import Foundation
+import SwiftUI
 // step 1. remove isFlip from card
 // step 2. instead of isFlip reference cardGame.matches and cardGame firstFaceupCard and secondFaceUpCard
 class CardGame: ObservableObject {
   var cards: [Card]
+    var gameHasEnded: Bool = false
   @Published var matches: [Card] = []
   @Published var firstFaceUpCard: Card?
   @Published var secondFaceUpCard: Card?
