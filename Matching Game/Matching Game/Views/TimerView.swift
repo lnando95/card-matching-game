@@ -121,12 +121,4 @@ struct TimerView_Previews: PreviewProvider {
     }
 }
 
-//func flipCard() {
-//        if card.isFaceUp == true {
-//            animationAmout -= 180
-//            cardsFlipped += 1
-//        } else if card.isFaceUp == false {
-//            animationAmout += 180
-//            cardsFlipped -= 1
-//            }
-// }
+//
