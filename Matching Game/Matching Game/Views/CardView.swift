@@ -39,6 +39,21 @@ struct CardView: View {
         .onReceive(memoryGame.model.objectWillChange) { _ in
             flipCard()
         }
+    
+ struct CardView: View {
+  var card: Card
+  @ObservedObject var memoryGame: MemoryGame
+     @State private var degrees = 0.0
+  var body: some View {
+    ZStack {
+  let rectangle = RoundedRectangle(cornerRadius: 20.0)
+    if memoryGame.model.cardIsFlipped(card: card) {
+      rectangle.fill(.white)
+        Text(card.image)
+        .font(Font.largeTitle)
+    } else {
+      rectangle.fill(.blue)
+
     }
     func flipCard() {
         if memoryGame.model.cardIsFlipped(card: card) {
@@ -60,3 +75,4 @@ struct CardView: View {
 
 
 
+  

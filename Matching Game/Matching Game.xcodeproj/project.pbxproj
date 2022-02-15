@@ -96,6 +96,7 @@
 				7DCC1C1C278E6A30006DCC2D /* StatsView.swift */,
 				4BCBD21627986B0F00F813A1 /* CardView.swift */,
 				7D4E85F3279EF93E00640812 /* TimerView.swift */,
+				7DEE7E3527B56E7C002AF033 /* MemoryGame.swift */,
 				7D4E85F1279EF92B00640812 /* SamCardView.swift */,
 			);
 			path = Views;
@@ -113,7 +114,6 @@
 		E04B1B62278745AF006ED4DC = {
 			isa = PBXGroup;
 			children = (
-				7DEE7E3527B56E7C002AF033 /* MemoryGame.swift */,
 				7DEE7E3327B5617C002AF033 /* SamNavView.swift */,
 				E04B1B6D278745AF006ED4DC /* Matching Game */,
 				E04B1B6C278745AF006ED4DC /* Products */,

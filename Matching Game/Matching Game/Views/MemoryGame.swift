@@ -15,7 +15,12 @@ struct MemoryGameView: View {
             LazyVGrid(columns: [GridItem(),GridItem(), GridItem(), GridItem()]) {
                 ForEach(memoryGame.cards) { card in
                     CardView(card: card, memoryGame: memoryGame).onTapGesture {
+<<<<<<< HEAD:Matching Game/MemoryGame.swift
                        
+=======
+                            memoryGame.model.flipCard(card: card)
+                            memoryGame.objectWillChange.send()
+>>>>>>> 6476219f7a40e577dda7fffb04c1c30af1cd252a:Matching Game/Matching Game/Views/MemoryGame.swift
                     }
                 }
                 .aspectRatio(3/5, contentMode: .fit)
