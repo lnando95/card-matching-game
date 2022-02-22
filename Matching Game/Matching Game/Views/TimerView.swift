@@ -15,19 +15,21 @@ struct TimerView: View {
     @State private var pauseAlertShowing = false
     @State private var gameStarted = false
     @State private var buttonText = "Start Game"
+    
+    var memoryGame: MemoryGame
+    
     var body: some View {
        
         HStack {
             Button(buttonText) {
-                gameStarted = true
+               gameStarted = true
                 timerControls3()
-                changeText()
                 toggleAlert()
             }
             .padding(15)
             .foregroundColor(.black)
             .font(.system(size: 25))
-            .background(.blue)
+            .background(.yellow)
             .cornerRadius(20)
             .padding(.leading, 10)
             
@@ -37,9 +39,7 @@ struct TimerView: View {
                 .font(Font.system(.largeTitle, design: .monospaced))
                 .onReceive(timerPublisher) { _ in
                     startTime += 0.01
-               //     if self.isTimerRunning {
-                        timerString = String(format: "%.1f", startTime)                 //   currentTime = ""//
-                   // }
+                        timerString = String(format: "%.1f", startTime)
                 }
                 .alert(isPresented: $pauseAlertShowing) {
                     Alert(
@@ -49,7 +49,7 @@ struct TimerView: View {
                             timerControls3()
                             
                         },
-                        secondaryButton: .destructive(Text("Quit Game")){
+                        secondaryButton: .destructive(Text("Quit Game")) {
                             dismiss()
                         }
                     )
@@ -59,19 +59,13 @@ struct TimerView: View {
                 .font(.system(size: 15))
                 .padding(.trailing, 15)
                 .padding(.leading, 15)
-                .background(.blue)
+                .background(.yellow)
                 .cornerRadius(20)
                 .padding(.trailing, 10)
             
                 .onAppear() {
-                    self.stopTimer() // So it doesn't start when it loads
+                    self.stopTimer()
                 }
-        }
-    }
-    
-    func changeText() {
-        if gameStarted {
-            buttonText = "Pause Game"
         }
     }
     
@@ -97,8 +91,6 @@ struct TimerView: View {
             
             self.stopTimer()
         } else {
-           // timerString = "0.00"
-          //  startTime = Date()
             self.startTimer()
         }
         isTimerRunning.toggle()
@@ -117,8 +109,8 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(memoryGame: MemoryGame.init(gameOption: GameOption.animalOption))
     }
 }
 
-//
+
